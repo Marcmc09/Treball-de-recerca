@@ -1,0 +1,8 @@
+Poseu aquí els 3 fitxers, AMB AQUESTS NOMS EXACTES (minúscules, sense espais ni accents):
+
+  treball-de-recerca.pdf   -> la memòria del TR
+  annexos.pdf              -> els annexos
+  app-central.apk          -> l'app d'App Inventor (Build > Android App (.apk) > Download)
+
+Si el nom no és exactament aquest, el botó de la web donarà error 404.
+Podeu esborrar aquest fitxer LLEGEIX-ME.txt quan hi hagi els tres.
