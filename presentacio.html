@@ -781,7 +781,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </figure>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:20</b></p>
+    <p><b>JOAN · 0:20</b></p>
     <ul>
       <li>Bon dia. Som en Marc Mercadé i en Joan Castells, de 2n de Batxillerat A.</li>
       <li>Presentem el nostre treball de recerca: «Estudiem en bones condicions?».</li>
@@ -806,7 +806,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <ul>
       <li>Primer, per què vam triar el tema, la hipòtesi i els objectius.</li>
       <li>Després, com ho hem resolt: el criteri, els valors de referència, el calibratge i la planificació; i com vam construir les centrals.</li>
-      <li>El Joan presentarà els resultats de cada variable, la influència de la ubicació i la fiabilitat dels sensors.</li>
+      <li>Després, els resultats de cada variable, la influència de la ubicació i la fiabilitat dels sensors.</li>
       <li>Acabarem amb la validació de la hipòtesi i les conclusions; la central expositiva i l’app, les podreu provar durant les preguntes.</li>
     </ul>
   </aside>
@@ -830,7 +830,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </figure>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:35</b></p>
+    <p><b>JOAN · 0:35</b></p>
     <ul>
       <li>Ens interessa la tecnologia: programació, robòtica, electrònica i anàlisi de dades.</li>
       <li>Volíem un treball més pràctic que teòric: construir un instrument i fer-lo servir.</li>
@@ -869,7 +869,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
 <section id="metode" data-timing="50">
   <header class="cap"><span class="seccio">2 · Metodologia</span><h2>Com la resoldrem</h2></header>
   <div class="passos">
-    <div class="pas anim" style="--i:0"><div class="cercle"><svg><use href="#i-eina"/></svg></div><div class="nom">1. Construir</div><div class="det">7 centrals amb ESP32</div></div>
+    <div class="pas anim" style="--i:0"><div class="cercle"><svg><use href="#i-eina"/></svg></div><div class="nom">1. Construir</div><div class="det">6 centrals amb ESP32</div></div>
     <div class="fletxa anim" style="--i:1"><svg><use href="#i-fletxa"/></svg></div>
     <div class="pas anim" style="--i:1"><div class="cercle"><svg><use href="#i-grafic"/></svg></div><div class="nom">2. Mesurar</div><div class="det">6 aules, cada 10 minuts</div></div>
     <div class="fletxa anim" style="--i:2"><svg><use href="#i-fletxa"/></svg></div>
@@ -885,7 +885,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:50</b></p>
+    <p><b>JOAN · 0:50</b></p>
     <ul>
       <li>Quatre passos: construir les centrals, mesurar a les aules, comparar amb els valors de referència i aplicar un criteri.</li>
       <li>El criteri és propi, perquè les fonts no fixen cap percentatge: una variable és adequada si està dins del valor de referència com a mínim el 70 % del temps de classe.</li>
@@ -968,16 +968,16 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <div class="desc" style="right:0;top:284px;text-align:right;--i:2"><b>Desplegament definitiu</b> · dades completes des del 24 de setembre</div>
 
     <div class="tram f4" style="left:716.8px;top:326px;width:179.2px;--i:3"></div>
-    <div class="desc" style="right:192px;top:332px;text-align:right;--i:3"><b>Central expositiva i app</b></div>
+    <div class="desc" style="right:192px;top:332px;text-align:right;--i:3"><b>Central expositiva</b></div>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:40</b></p>
+    <p><b>JOAN · 0:40</b></p>
     <ul>
-      <li>Fase 1 (juny i juliol): prova pilot amb les 6 centrals i només 3 variables (temperatura, humitat i CO₂), una lectura cada 2 hores.</li>
-      <li>Va servir per detectar problemes: talls de connexió i un CO₂ que pujava amb l’edifici buit.</li>
-      <li>Fase 2 (estiu i principis de setembre): sensors de so i de llum, calibratge, una lectura cada 10 minuts i un canal de ThingSpeak per central.</li>
-      <li>Fase 3: des del 24 de setembre, dades completes de les 5 variables.</li>
-      <li>A l’octubre, mentre analitzàvem les dades, vam acabar la central expositiva i l’app.</li>
+      <li>Fase 1, prova pilot (juny i juliol): les 6 centrals a les aules amb només 3 variables (temperatura, humitat i CO₂) i una lectura cada 2 hores.</li>
+      <li>Va servir per comprovar que l’enviament per wifi funcionava i per detectar problemes: talls de connexió i un CO₂ que pujava amb l’edifici buit.</li>
+      <li>Fase 2, millores (estiu i principis de setembre): afegir a les centrals els sensors de so i de llum i calibrar-los.</li>
+      <li>Fase 3, desplegament definitiu: a l’inici de curs, les centrals tornen a les aules; el 24 de setembre, amb els 4 sensors i el programa nou, comença la recollida definitiva de les 5 variables.</li>
+      <li>A l’octubre, mentre analitzàvem les dades, vam acabar la central expositiva.</li>
     </ul>
   </aside>
 </section>
@@ -1001,13 +1001,13 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>MARC · 1:00</b></p>
+    <p><b>JOAN · 1:00</b></p>
     <ul>
       <li>Cada central: placa ESP32 STEAMakers i 4 sensors: DHT11 (temperatura i humitat), TEMT6000 (llum), sensor de so KS0035 i CCS811 (CO₂).</li>
       <li>Programada amb blocs (STEAMakersBlocks); es connecta a la wifi del centre (gencat_ENS_EDU_LAB).</li>
       <li>Cada 10 minuts envia les dades a ThingSpeak: 6 canals repartits en 2 comptes gratuïts.</li>
-      <li>Pressupost: 583,06 € les set centrals (uns 74 € els components de cada central); el material el va proporcionar l’institut.</li>
-      <li>«En vam construir set: sis per a les aules i una setena, la central expositiva, que us ensenyarem al final.» Passo la paraula al Joan.</li>
+      <li>Cada central va costar uns 74 € (els components); el material el va proporcionar l’institut.</li>
+      <li>«En vam construir set: sis per a les aules i una setena, la central expositiva, que us ensenyarem al final.»</li>
     </ul>
   </aside>
 </section>
@@ -1034,7 +1034,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 0:40</b> — 4 clics: una solució a cada clic.</p>
+    <p><b>MARC · 0:40</b> — 4 clics: una solució a cada clic.</p>
     <ul>
       <li>No tot va funcionar a la primera. Quatre problemes reals i com els vam resoldre:</li>
       <li>[clic 1] Al principi no sabíem programar ni dissenyar circuits → vam aprendre amb tutorials, la documentació de la placa (Innova Didàctic), fent proves i amb l’ajuda de la tutora.</li>
@@ -1064,7 +1064,8 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
       <li>L’aula 2 és la sala de professors: també hi han de tenir bones condicions.</li>
       <li>La central, sempre al mateix lloc: al costat de la pissarra i de la taula del professor.</li>
       <li>Del 8 de setembre al 8 d’octubre, hores de classe (8:00–14:30 i 14:40–21:00), en tres períodes.</li>
-      <li>Del 24 de setembre al 8 d’octubre vam rebre 4.516 de les 4.566 lectures esperades: el 98,9 %.</li>
+      <li>Al començament, amb el programa de la prova pilot, una lectura cada 2 hores; des del 24 de setembre, amb el programa nou, una cada 10 minuts.</li>
+      <li>Del 24 de setembre al 8 d’octubre vam rebre 4.516 lectures: gairebé el 99 % de les esperades (98,9 %).</li>
     </ul>
   </aside>
 </section>
@@ -1095,7 +1096,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 1:00</b> — 4 clics: el gràfic es dibuixa període a període.</p>
+    <p><b>MARC · 1:00</b> — 4 clics: el gràfic es dibuixa període a període.</p>
     <ul>
       <li>[clic 1] 8–23 de setembre: la mitjana va superar els 25 °C cada dia; el 8 de setembre, 29,6 °C. Només el 10 % del temps dins.</li>
       <li>[clic 2] 24 de setembre – 1 d’octubre: igual, el 12 % dins. Unes 11 hores de les gairebé 13 de classe per sobre de 25 °C.</li>
@@ -1136,6 +1137,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <ul>
       <li>Valor de referència: del 40 al 60 %. La humitat empitjora quan la temperatura millora.</li>
       <li>Temps dins: 51 % (del 8 al 23 de setembre), 18 % (del 24 de setembre a l’1 d’octubre) i 6 % (del 2 al 8 d’octubre). A l’octubre, el 72 % del temps per sobre del 70 %.</li>
+      <li>Probablement hi influeixen la pluja i la baixada de la temperatura: l’aire fred pot contenir menys vapor d’aigua, i amb la mateixa aigua a l’aire la humitat relativa puja.</li>
       <li>[clic 1] L’aula 1 marca molt més: sovint per sobre del 90 %, el màxim que garanteix el fabricant. A la prova final el seu sensor va marcar uns 10 punts més que els altres (annex 6).</li>
       <li>[clic 2] Sense l’aula 1, la conclusió és la mateixa.</li>
     </ul>
@@ -1209,7 +1211,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 0:40</b> — 2 clics: l’aula 3 i la comparació amb l’edifici buit.</p>
+    <p><b>MARC · 0:40</b> — 2 clics: l’aula 3 i la comparació amb l’edifici buit.</p>
     <ul>
       <li>El CCS811 no mesura el CO₂ real: l’estima a partir d’altres gasos (eCO₂) i la seva referència d’aire net es desplaça.</li>
       <li>Segons el sensor, totes les aules superen els 1.000 ppm de mitjana.</li>
@@ -1246,7 +1248,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 0:40</b> — 2 clics: la segona setmana i els patis.</p>
+    <p><b>MARC · 0:40</b> — 2 clics: la segona setmana i els patis.</p>
     <ul>
       <li>El sensor no detecta sons per sota d’uns 50 dB: cada so detectat ja supera els 35 dB(A) de l’OMS.</li>
       <li>Primera setmana: com a mínim el 18 % del temps per sobre del límit; quan hi ha so, uns 66 dB(A) de mitjana (màxims de 77).</li>
@@ -1361,12 +1363,12 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 0:35</b> — 3 clics: temperatura, humitat i CO₂.</p>
+    <p><b>MARC · 0:35</b> — 3 clics: temperatura, humitat i CO₂.</p>
     <ul>
       <li>Per saber si els valors estranys eren de l’aula o del sensor, del 29 al 31 d’octubre vam posar les sis centrals juntes a la sala de professors (annex 6).</li>
       <li>[clic 1] Temperatura: mai més d’1 °C de diferència (0,2 °C de mitjana com a màxim) → les diferències entre aules probablement són reals.</li>
       <li>[clic 2] Humitat: la central 1 marca uns 10 punts més → bona part de la humitat de l’aula 1 és el sensor.</li>
-      <li>[clic 3] CO₂: la central 3 va marcar uns 8.700 ppm de nit (les altres, 1.500–1.900) → el sensor de l’aula 3 no funciona bé. Passo la paraula al Marc.</li>
+      <li>[clic 3] CO₂: la central 3 va marcar uns 8.700 ppm de nit (les altres, 1.500–1.900) → el sensor de l’aula 3 no funciona bé.</li>
     </ul>
   </aside>
 </section>
@@ -1410,7 +1412,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
   </div>
   <div class="segell fragment fade-up nomes-pantalla" data-fragment-index="8"><svg><use href="#i-segell"/></svg>Hipòtesi confirmada <small>pel confort tèrmic</small></div>
   <aside class="notes">
-    <p><b>MARC · 1:10</b> — 8 clics: 6 files, el resum de barres i el missatge final.</p>
+    <p><b>JOAN → MARC · 1:10</b> — 8 clics. El Joan fa la taula (clics 1–6); el Marc, el resum de barres i el missatge final (clics 7–8).</p>
     <ul>
       <li>Apliquem el criteri del 70 % a cada període.</li>
       <li>Temperatura: no adequada al setembre (10 % i 12 %), adequada a l’octubre (92 %). Humitat: no adequada en cap període.</li>
@@ -1477,7 +1479,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <span><b>Limitacions:</b> sensors de baix cost i només dues setmanes amb les cinc variables → <b>resultats orientatius</b></span>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:45</b></p>
+    <p><b>JOAN · 0:45</b></p>
     <ul>
       <li>És viable fer centrals pròpies amb l’ESP32: el 98,9 % de les lectures, amb uns 74 € per central.</li>
       <li>El problema principal és el confort tèrmic: calor al setembre i humitat a l’octubre.</li>
@@ -1509,13 +1511,13 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:45</b></p>
+    <p><b>JOAN · 0:45</b></p>
     <ul>
       <li>Al setembre: abaixar les persianes al matí (la façana dona a l’est) i ventilar a primera hora i als patis.</li>
       <li>Engegar els ventiladors: les aules en tenen, i l’aire en moviment fa que la sensació tèrmica sigui més baixa.</li>
       <li>A llarg termini: climatització a les aules més caloroses, començant per la planta 2, amb l’energia de les plaques solars del centre.</li>
       <li>A l’octubre: controlar la humitat i revisar l’aula 1 (sensor i possibles filtracions).</li>
-      <li>Sensors més precisos: un de CO₂ de tipus NDIR, que mesura el CO₂ real, i un de so que detecti per sota de 50&nbsp;dB. Són les dues variables que no hem pogut valorar.</li>
+      <li>Sensors més precisos: un de CO₂ de tipus NDIR, que mesura el CO₂ real, i un de so que detecti sons per sota dels 35&nbsp;dB(A), el límit de l’OMS (l’actual no detecta res per sota d’uns 50&nbsp;dB). Són les dues variables que no hem pogut valorar.</li>
       <li>Calibrar les centrals entre elles: posar-les totes juntes al mateix lloc un o dos dies abans de repartir-les. Hauríem vist abans de mesurar el problema de la humitat de l’aula 1 i del CO₂ de l’aula 3 (diapositiva 19).</li>
       <li>Mesurar tot el curs: amb dades de l’hivern, amb la calefacció engegada, i de la primavera.</li>
     </ul>
@@ -1532,7 +1534,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <div class="apres anim" style="--i:3"><span class="ico"><svg><use href="#i-bombeta"/></svg></span><span>Com l’ambient de l’aula afecta l’estudi i la concentració</span></div>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:30</b> (el Joan pot afegir-hi un punt)</p>
+    <p><b>MARC · 0:30</b></p>
     <ul>
       <li>Al principi no sabíem programar l’ESP32 ni els sensors; hem après a fer-ho, a crear una app i a dissenyar i tallar una caixa amb làser (vam ser els primers a fer servir la nova talladora de l’institut).</li>
       <li>Gran part del que hem après ha estat equivocant-nos i buscant com resoldre cada problema.</li>
@@ -1554,11 +1556,10 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     <li class="anim" style="--i:5">Steadman, R. G. (1994). Norms of apparent temperature in Australia. <i>Australian Meteorological Magazine, 43</i>(1), 1-16.</li>
   </ul>
   <aside class="notes">
-    <p><b>MARC · 0:10</b></p>
+    <p><b>JOAN · 0:10</b></p>
     <ul>
       <li>Aquestes són les fonts dels valors de referència i del càlcul de la sensació tèrmica.</li>
       <li>La bibliografia completa és al treball i a la web del QR.</li>
-      <li>Passo la paraula al Joan, que us presentarà la central expositiva.</li>
     </ul>
   </aside>
 </section>
@@ -1587,7 +1588,7 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
     </div>
   </div>
   <aside class="notes">
-    <p><b>JOAN · 0:45</b></p>
+    <p><b>MARC · 0:45</b></p>
     <ul>
       <li>La setena central: els mateixos 4 sensors, però mostra les dades en directe.</li>
       <li>Pantalla OLED: temperatura, humitat i sensació tèrmica. Tira LED NeoPixel (30 LEDs): nivell de soroll.</li>
@@ -1619,10 +1620,11 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
   <aside class="notes">
     <p><b>JOAN · 0:35</b> — aquesta diapositiva es queda durant les preguntes.</p>
     <ul>
+      <li>El que hem preparat per al tribunal és l’app de la central expositiva, perquè la pugueu provar.</li>
       <li>App per a Android feta amb MIT App Inventor; es connecta a la central per Bluetooth, sense wifi.</li>
       <li>Cada 2 segons rep les dades: 6 targetes amb colors segons el valor de referència i un gràfic en directe de les últimes 30 lectures.</li>
       <li>Al QR hi ha la web amb l’app i els documents del treball.</li>
-      <li>Gràcies per la vostra atenció. Podeu provar l’app mentre responem les vostres preguntes.</li>
+      <li>Gràcies per la vostra atenció. Teniu alguna pregunta sobre el treball o sobre l’exposició?</li>
     </ul>
   </aside>
 </section>
