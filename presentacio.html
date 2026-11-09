@@ -697,6 +697,12 @@ html:not(.print-pdf) .reveal .fragment.visible .fletxa-calor path, html:not(.pri
 .pregunta-r .n { width: 36px; height: 36px; border-radius: 50%; background: var(--blau); color: #fff; font-size: 24px; font-weight: 700; display: grid; place-items: center; }
 .pregunta-r .q { font-size: 24px; line-height: 28px; color: var(--text); }
 .pregunta-r .resp { font-size: 24px; line-height: 28px; font-weight: 700; color: var(--blau); background: var(--blau-suau); border-left: 4px solid var(--verd); border-radius: 6px; padding: 3px 12px; }
+/* Conclusions unificades (preguntes + limitacions): files més compactes perquè hi càpiga la caixa de limitacions */
+#preguntes .preguntes { gap: 4px; }
+#preguntes .pregunta-r { padding: 3px 12px; min-height: 0; }
+#preguntes .pregunta-r .q, #preguntes .pregunta-r .resp { line-height: 26px; }
+#preguntes .pregunta-r .resp { padding: 1px 10px; }
+#preguntes .caixa-limit { margin-top: 8px; padding: 6px 14px; line-height: 26px; }
 
 /* Valoració personal */
 .apresos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 22px; margin-top: 6px; }
@@ -1435,49 +1441,30 @@ html:not(.print-pdf) .nomes-pdf { display: none !important; }
   <div class="segell"><svg><use href="#i-segell"/></svg>Hipòtesi confirmada <small>pel confort tèrmic</small></div>
 </section>
 
-<!-- ============================ 23 · PREGUNTES DE RECERCA ============================ -->
-<section id="preguntes" data-timing="40">
-  <header class="cap"><span class="seccio">5 · Conclusions</span><h2>Responem les preguntes de recerca</h2></header>
+<!-- ============================ 21 · CONCLUSIONS: PREGUNTES DE RECERCA ============================ -->
+<section id="preguntes" data-timing="60">
+  <header class="cap"><span class="seccio">5 · Conclusions</span><h2>Conclusions: responem les preguntes de recerca</h2></header>
   <div class="preguntes">
-    <div class="pregunta-r anim" style="--i:0"><span class="n">1</span><span class="q">És viable construir una estació pròpia amb l’ESP32?</span><span class="resp fragment fade-left" data-fragment-index="1">Sí: 98,9&nbsp;% de les lectures</span></div>
-    <div class="pregunta-r anim" style="--i:1"><span class="n">2</span><span class="q">Com recollim, guardem i representem les dades?</span><span class="resp fragment fade-left" data-fragment-index="2">Wifi → ThingSpeak → full de càlcul</span></div>
-    <div class="pregunta-r anim" style="--i:2"><span class="n">3</span><span class="q">Quines condicions hi ha a les aules i com varien?</span><span class="resp fragment fade-left" data-fragment-index="3">Temperatura alta al setembre i humitat alta a l’octubre</span></div>
-    <div class="pregunta-r anim" style="--i:3"><span class="n">4</span><span class="q">Compleixen les recomanacions de confort?</span><span class="resp fragment fade-left" data-fragment-index="4">No: el confort tèrmic no és adequat</span></div>
-    <div class="pregunta-r anim" style="--i:4"><span class="n">5</span><span class="q">Com influeixen l’hora del dia i la ubicació?</span><span class="resp fragment fade-left" data-fragment-index="5">L’hora, clarament; la ubicació, menys</span></div>
+    <div class="pregunta-r anim" style="--i:0"><span class="n">1</span><span class="q">És viable una estació pròpia amb l’ESP32?</span><span class="resp fragment fade-left" data-fragment-index="1">Sí: 98,9&nbsp;% de les lectures</span></div>
+    <div class="pregunta-r anim" style="--i:1"><span class="n">2</span><span class="q">Com recollim i representem les dades?</span><span class="resp fragment fade-left" data-fragment-index="2">Wifi → ThingSpeak → full de càlcul</span></div>
+    <div class="pregunta-r anim" style="--i:2"><span class="n">3</span><span class="q">Quines condicions hi ha a les aules?</span><span class="resp fragment fade-left" data-fragment-index="3">Temperatura alta al setembre i humitat alta a l’octubre</span></div>
+    <div class="pregunta-r anim" style="--i:3"><span class="n">4</span><span class="q">Compleixen les recomanacions de confort?</span><span class="resp fragment fade-left" data-fragment-index="4">Confort tèrmic, no; llum, sí; CO<sub>2</sub> i soroll, no valorables</span></div>
+    <div class="pregunta-r anim" style="--i:4"><span class="n">5</span><span class="q">Com influeixen l’hora i la ubicació?</span><span class="resp fragment fade-left" data-fragment-index="5">L’hora, clarament; la ubicació, menys</span></div>
+  </div>
+  <div class="caixa-limit fragment fade-up" data-fragment-index="6">
+    <svg style="width:30px;height:30px;flex:0 0 30px;color:var(--gris)"><use href="#i-alerta"/></svg>
+    <span><b>Limitacions:</b> sensors de baix cost, 2 setmanes → <b>resultats orientatius</b></span>
   </div>
   <aside class="notes">
-    <p><b>MARC · 0:40</b> — 5 clics: una resposta a cada clic.</p>
+    <p><b>MARC · 1:00</b> — 6 clics: una resposta a cada clic i, al final, les limitacions.</p>
     <ul>
-      <li>Al principi ens vam fer cinc preguntes de recerca (apartat 1.2); ara les responem (7.2).</li>
+      <li>Al principi ens vam fer cinc preguntes de recerca (apartat 1.2); ara les responem (7.2). Són les conclusions del treball.</li>
       <li>[clic 1] Sí, és viable: 7 centrals; les de les aules van enviar el 98,9 % de les lectures; uns 74 € per central.</li>
       <li>[clic 2] Per wifi, cada 10 minuts, a ThingSpeak; després, al full de càlcul per fer taules i gràfics; i en directe a la central expositiva i a l’app, per Bluetooth.</li>
       <li>[clic 3] Temperatura alta al setembre i humitat alta a l’octubre; la temperatura puja durant el matí, baixa una mica als patis i és més alta a la tarda.</li>
-      <li>[clic 4] No: el confort tèrmic no va ser adequat; només la llum ho va ser, i el CO₂ i el soroll no s’han pogut comprovar.</li>
+      <li>[clic 4] No: el confort tèrmic no va ser adequat (només el 2 % del temps amb temperatura i humitat dins alhora); només la llum ho va ser, i el CO₂ i el soroll no s’han pogut valorar amb aquests sensors.</li>
       <li>[clic 5] L’hora hi influeix clarament (tarda més calorosa, patis); la ubicació, menys: la planta 2, uns 0,9 °C més calenta, i ho diem amb prudència.</li>
-    </ul>
-  </aside>
-</section>
-
-<!-- ============================ 24 · CONCLUSIONS ============================ -->
-<section id="conclusions" data-timing="45">
-  <header class="cap"><span class="seccio">5 · Conclusions</span><h2>Conclusions</h2></header>
-  <ul class="conclusions">
-    <li class="anim" style="--i:0"><span class="n">1</span><span>Centrals pròpies viables: <b>98,9&nbsp;%</b> de les lectures rebudes</span></li>
-    <li class="anim" style="--i:1"><span class="n">2</span><span>Confort tèrmic no adequat: <b>temperatura al setembre, humitat a l’octubre</b></span></li>
-    <li class="anim" style="--i:2"><span class="n">3</span><span>Més calor a la tarda i a les plantes altes</span></li>
-    <li class="anim" style="--i:3"><span class="n">4</span><span>Llum adequada; CO<sub>2</sub> i soroll, no valorables amb aquests sensors</span></li>
-  </ul>
-  <div class="caixa-limit anim" style="--i:4">
-    <svg style="width:30px;height:30px;flex:0 0 30px;color:var(--gris)"><use href="#i-alerta"/></svg>
-    <span><b>Limitacions:</b> sensors de baix cost i només dues setmanes amb les cinc variables → <b>resultats orientatius</b></span>
-  </div>
-  <aside class="notes">
-    <p><b>JOAN · 0:45</b></p>
-    <ul>
-      <li>És viable fer centrals pròpies amb l’ESP32: el 98,9 % de les lectures, amb uns 74 € per central.</li>
-      <li>El problema principal és el confort tèrmic: la temperatura al setembre i la humitat a l’octubre.</li>
-      <li>La tarda i les plantes altes són més calentes; la llum és adequada; el CO₂ i el soroll no s’han pogut valorar.</li>
-      <li>Limitacions: sensors de baix cost (DHT11: ±2 °C i ±5 punts d’humitat), només 2 setmanes amb les 5 variables i sense dades de l’exterior → resultats orientatius.</li>
+      <li>[clic 6] Limitacions: sensors de baix cost (DHT11: ±2 °C i ±5 punts d’humitat), només 2 setmanes amb les 5 variables i sense dades de l’exterior → resultats orientatius.</li>
     </ul>
   </aside>
 </section>
